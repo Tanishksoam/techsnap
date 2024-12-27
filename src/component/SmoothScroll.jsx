@@ -1,6 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useScroll, useSpring, useTransform, motion } from "framer-motion";
 
+// eslint-disable-next-line react/prop-types
 const SmoothScroll = ({ children }) => {
   const { scrollYProgress } = useScroll(); // Tracks the scroll progress (0 to 1)
   const smoothProgress = useSpring(scrollYProgress, { mass: 0.1 }); // Smoothens the progress
@@ -29,7 +30,6 @@ const SmoothScroll = ({ children }) => {
 
   return (
     <>
-      
       <motion.div
         className="scrollBody"
         ref={contentRef} // Attach the ref to the scroll container
