@@ -3,6 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SmoothScroll from "./component/SmoothScroll";
 import { motion } from "framer-motion";
+import ScrollProgressAnimation from "./component/scrollsvg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -125,7 +126,7 @@ const ScrollColorChange = () => {
             data-bg-color="#e0f0ff"
             style={{ height: "100vh" }}
           >
-            <div className="w-1440 flex justify-center items-center gap-2 ">
+            {/* <div className="w-1440 flex justify-center items-center gap-2 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="10"
@@ -163,8 +164,8 @@ const ScrollColorChange = () => {
                     strokeDasharray: pathLength2,
                   }}
                 />
-              </svg>
-              <svg
+              </svg> */}
+            {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1217"
                 height="1209"
@@ -201,8 +202,9 @@ const ScrollColorChange = () => {
                     strokeDasharray: pathLength,
                   }}
                 />
-              </svg>
-              <div className=" absolute top-[45%] lg:top-[30%] right-[5%] w-xl flex flex-wrap justify-center items-center gap-10 lg:right-0 px-4">
+              </svg> */}
+            <ScrollProgressAnimation />
+            {/* <div className=" absolute top-[45%] lg:top-[30%] right-[5%] w-xl flex flex-wrap justify-center items-center gap-10 lg:right-0 px-4">
                 <motion.div
                   className="backdrop-filter backdrop-blur-lg px-4 py-8 rounded-2xl border-2 border-blue-200 "
                   animate={{
@@ -255,8 +257,8 @@ const ScrollColorChange = () => {
                     </div>
                   </aside>
                 </motion.div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
         </div>
       </SmoothScroll>
